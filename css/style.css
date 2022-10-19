@@ -1,0 +1,215 @@
+/*************** CSS GLOBAL ***************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    height: 100vh;
+}
+/******************************************/
+.item {
+    border-radius: 10px;
+    padding: 40px 40px;
+}
+.img-pattern {
+    position: absolute;
+    bottom: 140px;
+    right: 80px;
+}
+.card-identity {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.card-identity img {
+    border-radius: 50%;
+    width: 30px;
+}
+.item1 .card-identity img{
+    border:2px solid #a775f1;
+    width: 35px;
+}
+.item4 .card-identity img{
+    border:2px solid #a775f1;
+    width: 35px;
+}
+.identity span {
+    display: flex;
+    margin-left: 10px;
+}
+.item1 .identity span:nth-child(1),
+.item2 .identity span:nth-child(1),
+.item4 .identity span:nth-child(1) {
+    color: #ffffff;
+}
+.item1 .identity span:nth-child(2),
+.item2 .identity span:nth-child(2),
+.item4 .identity span:nth-child(2) {
+    color: rgba(255, 255, 255, 0.5);
+}
+.item3 .identity span:nth-child(2),
+.item5 .identity span:nth-child(2) {
+    color: rgba(72, 85, 106, 0.5);
+}
+.main-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: relative;
+}
+.item3 .main-text,
+.item5 .main-text {
+    color: #48556a;
+}
+.secondary-text {
+    color: #fff;
+    line-height: 1.5;
+}
+.item3 .secondary-text,
+.item5 .secondary-text {
+    color: #48556a;
+}   
+.attribution {
+    margin-left: 50px;
+}
+/*************** CSS GRID ***************/
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    margin: 50px 50px 25px 50px;
+}
+.item1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+}
+.item2 {
+    background-color: hsl(217, 19%, 35%)
+}
+.item3 {
+    color: hsl(217, 19%, 35%);
+    background-color: hsl(0, 0%, 100%);
+    grid-row: 2;
+}
+.item4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
+}
+.item5 {
+    background-color: hsl(0, 0%, 100%);
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/*************** MEDIA QUERIES ***************/
+
+@media screen and (max-width: 1771px) {
+    .img-pattern {
+        bottom: 158px;
+    }
+}
+@media screen and (max-width: 1498px) {
+    .img-pattern {
+        bottom: 182px;
+    }
+}
+@media screen and (max-width: 1398px) {
+    .img-pattern {
+        bottom: 202px;
+    }
+}
+@media screen and (max-width: 1186px) {
+    .img-pattern {
+        bottom: 223px;
+    }
+}
+@media screen and (max-width: 1098px) {
+    .img-pattern {
+        bottom: 182px;
+    }
+    .item {
+        padding: 20px 20px;
+    }
+}
+@media screen and (max-width: 998px) {
+    .img-pattern {
+        bottom: 206px;
+    }
+}
+@media screen and (max-width: 898px) {
+    .img-pattern {
+        bottom: 267px;
+    }
+}
+@media screen and (max-width: 798px) {
+    .img-pattern {
+        bottom: 118px;
+    }
+    .grid-container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 50px 50px 25px 50px;
+    }
+    .item1 {
+        background-color: hsl(263, 55%, 52%);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row: 1;
+        position: relative;
+    }
+    .item2 {
+        background-color: hsl(217, 19%, 35%);
+        grid-row: 2;
+    }
+    .item3 {
+        color: hsl(217, 19%, 35%);
+        background-color: hsl(0, 0%, 100%);
+        grid-row: 3;
+    }
+    .item4 {
+        background-color: hsl(219, 29%, 14%);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row: 4;
+    }
+    .item5 {
+        background-color: hsl(0, 0%, 100%);
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-row: 5;
+    }
+}
+@media screen and (max-width: 698px) {
+    .img-pattern {
+        bottom: 163px;
+    }
+}
+@media screen and (max-width: 598px) {
+    .img-pattern {
+        bottom: 163px;
+    }
+}
+@media screen and (max-width: 498px) {
+    .img-pattern {
+        bottom: 225px;
+    }
+}
+@media screen and (max-width: 398px) {
+    .img-pattern {
+        bottom: 331px;
+        right: 35px;
+    }
+}
