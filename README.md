@@ -1,4 +1,4 @@
-# frontendmentor-challenger-cssgrid
+# frontendmentor-challenge-cssgrid
 
 Utilisation de CSS Grid pour ce challenge.
 Les difficultés que j'ai rencontrées sont variées. J'ai tenté de les résoudre en utilisant la documentation MDN.
